@@ -19,8 +19,8 @@
                 <h2 class="title text-center mt-2 mb-0 pt-1 pb-0">
                     Create Task
                 </h2>
-                <div class="d-flex my-auto flex-md-row flex-sm-column flex-xs-column toDo">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-auto todoForm">
+                <div class="d-flex my-auto flex-md-row flex-sm-column  toDo">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-auto mx-auto todoForm">
                         <form>
                             <fieldset class="d-flex flex-column m-0 p-0">
                                 <legend class="ps-1">
@@ -30,24 +30,24 @@
                                     <div class="col-9 pe-0 ps-0 ms-0 me-0">
                                         <div class="row g-1 align-items-center p-0 mt-0 mb-1 me-1">
                                             <div class="col-auto my-0 py-0">
-                                                <label for="task" class="col-form-label">TASK:</label>
+                                                <label for="task" class="col-form-label input-lb">TASK:</label>
                                             </div>
                                             <div class="col my-0 py-0">
-                                                <input type="text" name="task" class="form-control " aria-describedby="textHelpInline" id="task" required>
+                                                <input type="text" name="task" class="form-control input-el" aria-describedby="textHelpInline" id="task" required>
                                             </div>
                                         </div>
 
                                         <div class="row g-1 align-items-center p-0 mt-0 mb-0 me-1">
                                             <div class="col-auto my-0 py-0">
-                                                <label for="duration" class="col-form-label">DURATION:</label>
+                                                <label for="duration" class="col-form-label input-lb">DURATION:</label>
                                             </div>
                                             <div class="col my-0 py-0">
-                                                <input type="number" min="1" max="12" name="number" class="form-control" aria-describedby="numberHelpInline" id="duration" required>
+                                                <input type="number" min="1" max="12" name="number" class="form-control inut-el" aria-describedby="numberHelpInline" id="duration" required>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-2 ps-0 ms-0">
-                                        <button type="button" class="btn btn-primary createTask_btn"  id="btn">Create Task</button>
+                                    <div class="col-2 ps-0 ms-0 btn-div">
+                                        <button type="button" class="btn btn-primary createTask_btn mx-auto"  id="btn">Create Task</button>
                                     </div>
                                 </div>
                             </fieldset>
@@ -55,7 +55,7 @@
 
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 schedule">
-                        <ul id="todo">
+                        <ul id="todo" class="m-0 p-0">
                             
                         </ul>
                         
