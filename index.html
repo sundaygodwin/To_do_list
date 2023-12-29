@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Schedules</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome and Bootstrap Icons CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid main py-5">
+        <div class="todo mx-auto">
+            <div class="container d-flex flex-column text-bg-success justify-content-center px-4 py-1">
+                <h2 class="title text-center mt-2 mb-0 pt-1 pb-0">
+                    Create Task
+                </h2>
+                <div class="d-flex my-auto flex-md-row flex-sm-column flex-xs-column toDo">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-auto todoForm">
+                        <form>
+                            <fieldset class="d-flex flex-column m-0 p-0">
+                                <legend class="ps-1">
+                                    Enter your schedules here:
+                                </legend>
+                                <div class="row d-flex ms-1 Form">
+                                    <div class="col-9 pe-0 ps-0 ms-0 me-0">
+                                        <div class="row g-1 align-items-center p-0 mt-0 mb-1 me-1">
+                                            <div class="col-auto my-0 py-0">
+                                                <label for="task" class="col-form-label">TASK:</label>
+                                            </div>
+                                            <div class="col my-0 py-0">
+                                                <input type="text" name="task" class="form-control " aria-describedby="textHelpInline" id="task" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-1 align-items-center p-0 mt-0 mb-0 me-1">
+                                            <div class="col-auto my-0 py-0">
+                                                <label for="duration" class="col-form-label">DURATION:</label>
+                                            </div>
+                                            <div class="col my-0 py-0">
+                                                <input type="number" min="1" max="12" name="number" class="form-control" aria-describedby="numberHelpInline" id="duration" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 ps-0 ms-0">
+                                        <button type="button" class="btn btn-primary createTask_btn"  id="btn">Create Task</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 schedule">
+                        <ul id="todo">
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                <h5 class="title text-center mb-2 mt-1 p-0">
+                    Designed by Sunday
+                </h5>
+            </div>
+        </div>
+    </div>
+
+               
+<!---------------------Conditional triggered Modal---------------------------------------------->
+        <!-- Bootstrap Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-danger">Warning!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black text-center">
+                        Please fill in the input field.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
